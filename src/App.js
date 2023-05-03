@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import TeamStatistic from './components/Teams';
+// import Navigation from './components/Navigation';
+// // import Navbar from './components/Navbar';
+// import Slideshow from './components/Carousel';
+// import News from './components/News';
+import PremierLeagueTable from './components/Table';
+import ResultsList from './components/Results';
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ResultsList />
+
     </div>
   );
 }
