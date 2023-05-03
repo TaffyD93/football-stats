@@ -8,13 +8,25 @@ body{
   background-attachment: fixed !important;
 }
 
-.navbar{
-  color: #ffffff !important;
-  padding: 100px;
+.nav-link{
+  margin: 0 30% 0 30%;
 }
 
-.nav-menu{
-  justify-content: space-between !important;
+.nav-link a{
+  color: #ffffff !important;
+  margin: 0 auto !important;
+  text-decoration: none !important;
+}
+
+.dropdown-item a{
+  color: black !important;
+  margin: 0 auto !important;
+  text-decoration: none !important;
+}
+
+
+#basic-nav-dropdown{
+  color: white !important;
 }
 
 /* .slide{
@@ -25,7 +37,7 @@ body{
 } */
 
 .slideshow {
-  margin-left: 300px;
+  margin: 0 auto;
   max-height: 400px;
   width: 65%;
   overflow: hidden;
@@ -59,9 +71,6 @@ body{
 .card{
   margin: 0 auto;
   margin: 3%;
-  /* display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;*/
   flex-direction: column !important; 
 }
 
@@ -115,7 +124,7 @@ table {
   padding-left: 5px;
 }
 
-.allfixtures{
+.all-fixtures{
   height: 500px;
   overflow-y: scroll;
 }
@@ -152,4 +161,13 @@ table {
   border-radius: 5px;
   background-color: rgb(0, 0, 0, 0.3);
   color: white;
+}
+
+.date-filter-text{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  margin-right: 5px;
 }

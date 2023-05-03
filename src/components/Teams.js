@@ -6,7 +6,7 @@ function TeamStatistic() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://v3.football.api-sports.io/teams/statistics?season=2021&team=31&league=39",
+        "https://v3.football.api-sports.io/teams/statistics?season=2021&team=42&league=39",
         {
           headers: {
             "x-rapidapi-host": "v3.football.api-sports.io",
@@ -16,11 +16,13 @@ function TeamStatistic() {
       );
       const data = await response.json();
       setStats(data.response[0]);
-      console.log("Stats are:", stats)
-      console.log("Data should be here", data.response[0])
     };
     fetchData();
   }, []);
+
+  useEffect(() => {
+    console.log("Stats are:", stats);
+  }, [stats]);
 
   if (!stats) {
     return <div>Loading...</div>;

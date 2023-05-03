@@ -1,19 +1,26 @@
 import React from 'react';
 import './App.css';
-import TeamStatistic from './components/Teams';
-// import Navigation from './components/Navigation';
-// // import Navbar from './components/Navbar';
-// import Slideshow from './components/Carousel';
-// import News from './components/News';
+import { Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation';
 import PremierLeagueTable from './components/Table';
 import ResultsList from './components/Results';
+import TeamStatistic from './components/Teams';
+import Home from './components/Home';
+
+// import Navbar from './components/Navbar';
 
 function App(){
   return (
-    <div>
-      <ResultsList />
+    <>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/table" element={<PremierLeagueTable />} />
+      <Route path="/results" element={<ResultsList />} />
+      <Route path="/team" elements={<TeamStatistic />} />
 
-    </div>
+    </Routes>
+    </>
   );
 }
 

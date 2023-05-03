@@ -32,22 +32,26 @@ function ResultsList() {
   function handleFilterChange(e) {
     setFilterDate(e.target.value);
   }
+
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
+  }
   
   return (
     <><div>
           <h2 className="header">English Premier League 2019 Fixtures and Results</h2>
-      </div><div>
-              <label htmlFor="date-filter">Filter by date:</label>
-              <input
-                  id="date-filter"
-                  type="date"
-                  value={filterDate}
-                  onChange={handleFilterChange} />
-              <ul className="allfixtures">
+      </div>
+      <div>
+          <div className="filter-container">
+              <label className="date-filter-text" htmlFor="date-filter">Filter by date:</label>
+              <input className="filter-input" type="date" value={filterDate} onChange={handleFilterChange} />
+              </div>
+              <ul className="all-fixtures">
                   {filteredFixtures.map((fixture) => (
                       <li className="fixtures" key={fixture.fixture.id}>
-                          {fixture.teams.home.name} vs {fixture.teams.away.name} -{' '}
-                          {fixture.fixture.date}
+                          {formatDate(fixture.fixture.date)} -{' '}
+                          {fixture.teams.home.name} {fixture.goals.home} vs {fixture.goals.away} {fixture.teams.away.name}
                       </li>
                   ))}
               </ul>
