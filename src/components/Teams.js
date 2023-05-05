@@ -1,6 +1,6 @@
 import { motion, spring } from 'framer-motion';
 import { useState } from 'react';
-import ArsBadge from '../Images/arsenal_logo_PNG1.png'
+import ArsBadge from '../Images/arsenal_logo_PNG1.png' //https://logos-world.net/arsenal-logo/
 
 function Arsenal() {
     const [isOpen, setIsOpen] = useState(false);
