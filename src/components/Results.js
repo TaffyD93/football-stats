@@ -40,7 +40,7 @@ function ResultsList() {
   
   return (
     <><div>
-          <h2 className="header">English Premier League 2019 Fixtures and Results</h2>
+          <h2 className="header">English Premier League 2021 Fixtures and Results</h2>
       </div>
       <div>
           <div className="filter-container">

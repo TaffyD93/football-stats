@@ -7,18 +7,16 @@ import ResultsList from './components/Results';
 import TeamStatistic from './components/Teams';
 import Home from './components/Home';
 
-// import Navbar from './components/Navbar';
-
 function App(){
   return (
     <>
     <Navigation />
     <Routes>
+
       <Route path="/" element={<Home />} />
       <Route path="/table" element={<PremierLeagueTable />} />
       <Route path="/results" element={<ResultsList />} />
-      <Route path="/team" elements={<TeamStatistic />} />
-
+      <Route path="/teams" element={<TeamStatistic />} />
     </Routes>
     </>
   );

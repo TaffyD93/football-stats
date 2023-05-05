@@ -1,49 +1,52 @@
-import React, { useState, useEffect } from "react";
+import { motion, spring } from 'framer-motion';
+import { useState } from 'react';
+import ArsBadge from '../Images/arsenal_logo_PNG1.png'
 
-function TeamStatistic() {
-  const [stats, setStats] = useState(null);
+function Arsenal() {
+    const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(
-        "https://v3.football.api-sports.io/teams/statistics?season=2021&team=42&league=39",
-        {
-          headers: {
-            "x-rapidapi-host": "v3.football.api-sports.io",
-            "x-rapidapi-key": "52d8d1925c80e27cad5492cb00d1607a"
-          }
-        }
-      );
-      const data = await response.json();
-      setStats(data.response[0]);
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    console.log("Stats are:", stats);
-  }, [stats]);
-
-  if (!stats) {
-    return <div>Loading...</div>;
-  }
-
-  const { games, wins, draws, loses, goals, goalsAgainst, cleanSheet } = stats.statistics[0];
-
-  return (
-    <div>
-      <h1>Team Stats for Arsenal</h1>
-      <ul>
-        <li>Games Played: {games.played.total}</li>
-        <li>Wins: {wins.total}</li>
-        <li>Draws: {draws.total}</li>
-        <li>Losses: {loses.total}</li>
-        <li>Goals For: {goals.for}</li>
-        <li>Goals Against: {goalsAgainst.total}</li>
-        <li>Clean Sheets: {cleanSheet.total}</li>
-      </ul>
-    </div>
-  );
+    return(
+        <div className="animation">
+            <motion.div transition={{layout: {duration: 1, type: spring}}} Layout onClick={() => setIsOpen(!isOpen)} className="team-page">
+                <motion.h2 layout="position">Arsenal</motion.h2>
+                <motion.img layout="position" className="arsenal-badge"src={ArsBadge}></motion.img>
+                {isOpen && (
+                    <motion.div className="expand">
+                        <ul className="team-stats">
+                            <li>Games Played: 38</li>
+                            <li>Wins: 22</li>
+                            <li>Draws: 3</li>
+                            <li>Losses: 13</li>
+                            <li>Goals For: 61</li>
+                            <li>Goals Against: 48</li>
+                            <li>Clean Sheets: 13</li>
+                        </ul>
+                    </motion.div>
+                )}
+            </motion.div>
+        </div>
+    )
 }
 
-export default TeamStatistic;
+export default Arsenal;
+
+
+// return (
+//     <div>
+//         <div className="team-page">
+//             <h1>Arsenal FC</h1>
+//             <img className="arsenal-badge" src={ArsBadge} alt="Arsenal Badge"></img>
+//         </div>
+//         <div>
+//             <ul className="team-stats">
+//                 <li>Games Played: 38</li>
+//                 <li>Wins: 22</li>
+//                 <li>Draws: 3</li>
+//                 <li>Losses: 13</li>
+//                 <li>Goals For: 61</li>
+//                 <li>Goals Against: 48</li>
+//                 <li>Clean Sheets: 13</li>
+//             </ul>
+//         </div>
+//     </div>
+//   );
