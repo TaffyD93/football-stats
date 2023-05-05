@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import CardHeader from 'react-bootstrap/CardHeader';
-import jude from '../Images/jude.jpeg';
-import harlaand from '../Images/harlaand.jpeg';
+import jude from '../Images/jude.jpeg'; //https://www.dailymail.co.uk/sport/football/article-12042181/Real-Madrid-verge-agreeing-Jude-Bellingham-deal.html
+import harlaand from '../Images/harlaand.jpeg'; //https://www.bbc.co.uk/sport/football/65474843
 
 const news = [
   {
