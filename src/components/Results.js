@@ -17,7 +17,7 @@ function ResultsList() {
 
   async function fetchFixtures() {
     const response = await fetch(
-      'https://v3.football.api-sports.io/fixtures?league=39&season=2021',
+      'https://v3.football.api-sports.io/fixtures?league=39&season=2021', //https://www.api-football.com/documentation-v3#section/Introduction
       {
         headers: {
           'x-rapidapi-host': 'v3.football.api-sports.io',
