@@ -2,8 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import premLogo from './prem-logo.png';
-// https://www.cleanpng.com/png-201617-premier-league-english-football-league-l-5171808/
+import premLogo from './prem-logo.png'; // https://www.cleanpng.com/png-201617-premier-league-english-football-league-l-5171808/
 import { Link } from "react-router-dom";
 
 function Navigation() {
