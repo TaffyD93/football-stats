@@ -10,7 +10,7 @@ const PremierLeagueTable = () => {
     const fetchTableData = async () => {
       const config = {
         method: 'get',
-        url: 'https://v3.football.api-sports.io/standings',
+        url: 'https://v3.football.api-sports.io/standings', //https://www.api-football.com/documentation-v3#section/Introduction
         headers: {
           'x-rapidapi-key': '52d8d1925c80e27cad5492cb00d1607a',
           'x-rapidapi-host': 'v3.football.api-sports.io',
