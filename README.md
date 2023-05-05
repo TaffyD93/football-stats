@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+Altaf Mehdi Dhanji
+DHA21548344
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Web Design 2
 
-## Available Scripts
+The website I have created is a site for statistics for the premier league in the 2021-2022 season, which includes the Premier league table, the full time results of the whole season and team statistics of Arsenal Football Club. The project I would say is small, but I had come across a lot of difficulties in regards to getting a working API with the information I needed to complete the task. Even once I had found a working API, I was limited to only using that API 100 times a day and I had to find out the specific key words the API used in order to call the data. In terms of design, it is a very simple looking website, which I believe highlighted a lot of my weaknesses, or areas I need to improve on, such as leaving a lot of dead space. The table and results page would require more work, thinking about it now, it would have been more beneficial to make the Navbar have a background color, and then before the table began have a white background, and I could have implemented the search function a bit better, and have a better table design, this would also be the same for the results page. One area I am slightly happy with is the Team page, where you can see the Arsenal card, when the card is clicked on the team stats appear, this was done by importing the framer-motion library and using the <motion.div> tags. If I had more time, I would have tried to do it so I could have a card for every team in the league, and made the page so you could view 4 cards per row. However, I had a lot of complications retrieving the API for that page and I had to hard code the figure in order to meet the deadline.
 
-In the project directory, you can run:
+I used an external library for the navbar (https://react-bootstrap.github.io/components/navbar/), for ease of time, this still proved to be a challenge due to not having full customisation of the bar. I also used https://codioful.com/ for the background. All photos used on the page have the website I got them from in the code as reference, as well as the link I got the API from.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall during the course of this assignment, I learnt more of what I need to accomplish to progress within this challenging field. I also learnt a lot about how to create certain components such as a table, or results with a map function and using API’s.
